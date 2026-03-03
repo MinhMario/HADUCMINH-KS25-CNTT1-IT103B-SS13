@@ -120,12 +120,13 @@ function updateFilm(film){
              console.log(`Phim không có trong Watchlist ${search}`);
             return;             
     }
-}     
-    }
-    if(rateFlag==true){
+}
+if(rateFlag==true){
         film[i].rating=rating;
         console.log("Đã cập nhật phim");
+    }     
     }
+    
 }
 function searchFilm(film){
     let choice=+prompt(`1.Tìm kiếm theo title
